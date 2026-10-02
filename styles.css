@@ -737,7 +737,7 @@ html:not(.is-ready) .nav{transform:translateY(-100%)}
   .stats__grid{margin-inline:0}
   .cell__list{gap:10px 24px}
   .bento{grid-template-columns:repeat(2,1fr)}
-  .cell--a,.cell--h,.cell--i{grid-column:1/-1}
+  .cell--a,.cell--h,.cell--i,.cell--j{grid-column:1/-1}
   .cell--a{min-height:420px}
   .form{grid-template-columns:1fr 1fr;gap:22px}
   .field--full{grid-column:1/-1}
@@ -752,11 +752,12 @@ html:not(.is-ready) .nav{transform:translateY(-100%)}
 @media (min-width:900px){
   :root{--nav-h:72px}
   .stats__grid{grid-template-columns:repeat(4,1fr);border-inline:1px solid var(--line)}
-  .bento{grid-template-columns:repeat(4,1fr);grid-auto-rows:minmax(236px,auto)}
+  .bento{grid-template-columns:repeat(4,1fr);grid-template-rows:repeat(4,minmax(236px,auto)) auto}
   .cell--a{grid-column:1/3;grid-row:1/3;min-height:0}
   .cell--b{grid-column:3/5;grid-row:1}
   .cell--c{grid-column:3/5;grid-row:2}
-  .cell--h,.cell--i{grid-column:span 2}
+  .cell--h,.cell--j{grid-column:span 2}
+  .cell--i{grid-column:1/-1;min-height:0;flex-direction:row;align-items:center;justify-content:flex-start;gap:24px}
   .cell--a .cell__t--xl{max-width:14ch}
   .peri__grid{grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(40px,6vw,88px);align-items:start}
   .pm{order:0;aspect-ratio:5/4;position:sticky;top:calc(var(--nav-h) + 24px)}
