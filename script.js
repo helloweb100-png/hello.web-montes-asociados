@@ -526,7 +526,7 @@
     const priceEl = $('[data-prev-price]', wrap);
     const cta = $('[data-prev-cta]', wrap);
     const fmt = n => '$' + n.toLocaleString('es-MX');
-    let type = 'auto', price = 5800, raf = 0, stateName = '';
+    let type = 'auto', price = 6100, raf = 0, stateName = '';
 
     const tween = (from, to) => {
       cancelAnimationFrame(raf);
