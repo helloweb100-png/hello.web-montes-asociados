@@ -421,6 +421,7 @@ html:not(.is-ready) .nav{transform:translateY(-100%)}
   .cell--photo:hover{box-shadow:var(--shadow-m)}
 }
 .cell--h{background:var(--tint);border-color:var(--cobalt-100)}
+.cell--h.cell--photo{background:var(--cobalt-700);border-color:transparent}
 .cell--i{background:var(--cobalt);color:var(--on-brand);border-color:var(--cobalt)}
 .cell--i .cell__d{color:rgba(253,253,255,.85)}
 .cell--i .cell__go{color:var(--on-brand)}
